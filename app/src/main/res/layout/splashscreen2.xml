@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_aaaa"
+    tools:context=".Splashscreen2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_blue"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulearn Learning App"
+            android:textSize="26sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:textColor="#1e509d"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="World's most loved Learning App"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulearn Learning App 2020. All Right Reserved."
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:layout_marginTop="100dp"
+            android:textColor="#8A8989"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/img_short_cover">
+        <shape android:shape="rectangle">
+
+            <stroke
+                android:width="45dp"
+                android:color="#046BA2">
+
+
+            </stroke>
+            <corners android:radius="440dp"/>
+
+        </shape>
+    </item>
+</selector>

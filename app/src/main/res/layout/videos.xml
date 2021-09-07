@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_gradient_horizontal"
+    tools:context=".Videos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_arrow_back_white_24dp"
+            android:elevation="0dp"
+            android:paddingRight="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="1dp" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Videos"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search_white_24dp"
+                android:elevation="0dp"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="1dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="0dp" />
+
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_notifications_none_white_24dp"
+                android:elevation="0dp"
+                android:paddingRight="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="0dp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="The Sound Theories"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="60 Videos | 55 E-books"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_border_chapters"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Videos"
+                            android:textColor="#1e509d"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="ToBooks"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="E-books"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:scrollbars="none"
+            tools:layout_editor_absoluteY="51dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="51dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:elevation="2dp"
+                        android:onClick="ToPurchase"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="2dp"
+                                android:background="@drawable/motion_square"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_play_circle_filled_white_24dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="The Light Theories"
+                                android:textColor="#000000"
+                                android:textScaleX="1"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="2 Papers | 10 Questions"
+                                    android:textColor="#B2000000"
+                                    android:textScaleX="1"
+                                    android:textSize="15dp" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:background="#41B6B6B6" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:elevation="2dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="2dp"
+                                android:background="@drawable/motion_square"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_play_circle_filled_white_24dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="The Light Theories"
+                                android:textColor="#000000"
+                                android:textScaleX="1"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="2 Papers | 10 Questions"
+                                    android:textColor="#B2000000"
+                                    android:textScaleX="1"
+                                    android:textSize="15dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:background="#41B6B6B6" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:elevation="2dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="2dp"
+                                android:background="@drawable/motion_square"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_play_circle_filled_white_24dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="The Light Theories"
+                                android:textColor="#000000"
+                                android:textScaleX="1"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="2 Papers | 10 Questions"
+                                    android:textColor="#B2000000"
+                                    android:textScaleX="1"
+                                    android:textSize="15dp" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:background="#41B6B6B6" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:elevation="2dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="2dp"
+                                android:background="@drawable/motion_square"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_play_circle_filled_white_24dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="The Light Theories"
+                                android:textColor="#000000"
+                                android:textScaleX="1"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="2 Papers | 10 Questions"
+                                    android:textColor="#B2000000"
+                                    android:textScaleX="1"
+                                    android:textSize="15dp" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:background="#41B6B6B6" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:elevation="2dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="2dp"
+                                android:background="@drawable/motion_square"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_play_circle_filled_white_24dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="The Light Theories"
+                                android:textColor="#000000"
+                                android:textScaleX="1"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="2 Papers | 10 Questions"
+                                    android:textColor="#B2000000"
+                                    android:textScaleX="1"
+                                    android:textSize="15dp" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:background="#41B6B6B6" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:elevation="2dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="2dp"
+                                android:background="@drawable/motion_square"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_play_circle_filled_white_24dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="The Light Theories"
+                                android:textColor="#000000"
+                                android:textScaleX="1"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="2 Papers | 10 Questions"
+                                    android:textColor="#B2000000"
+                                    android:textScaleX="1"
+                                    android:textSize="15dp" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:background="#41B6B6B6" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:elevation="2dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:elevation="2dp"
+                                android:background="@drawable/motion_square"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_play_circle_filled_white_24dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="The Light Theories"
+                                android:textColor="#000000"
+                                android:textScaleX="1"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="2 Papers | 10 Questions"
+                                    android:textColor="#B2000000"
+                                    android:textScaleX="1"
+                                    android:textSize="15dp" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:background="#41B6B6B6" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

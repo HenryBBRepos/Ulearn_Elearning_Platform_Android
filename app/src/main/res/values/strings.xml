@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ulearn</string>
+    <string name="registered_symbol">&#174;Ulearn Learning App 2020. All right reserved</string>
+
+
+    <string-array name="country_code">
+        <item><font color="#000000">+233</font></item>
+        <item><font color="#000000">+91</font></item>
+        <item><font color="#000000">+344</font></item>
+        <item><font color="#000000">+98</font></item>
+    </string-array>
+
+    <string-array name="grade_board">
+        <item><font color="#727272">Board 1</font></item>
+        <item><font color="#727272">Board 2</font></item>
+        <item><font color="#727272">Board 3</font></item>
+        <item><font color="#727272">Board 4</font></item>
+        <item><font color="#727272">Board 5</font></item>
+        <item><font color="#727272">Board 6</font></item>
+        <item><font color="#727272">Board 7</font></item>
+        <item><font color="#727272">Board 8</font></item>
+        <item><font color="#727272">Board 9</font></item>
+        <item><font color="#727272">Board 10</font></item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhoneNumber">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                    android:elevation="0dp"
+                    android:paddingRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="1dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Verify your Phone Number"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textScaleX="1"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="We have sent you an SMS with a code to number 055 454 5453"
+                android:textColor="#727272"
+                android:textScaleX="1"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_input">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingLeft="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_input_new">
+
+            <ImageView
+                android:id="@+id/ic_magnify"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:src="@drawable/ghana_flag"/>
+
+            <Spinner
+                android:id="@+id/country_code"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/ic_magnify"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner_background"
+                android:popupBackground="#ffffff"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/country_code"
+                android:background="@null"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="1dp"
+                    android:text="Or Login with"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:text="Social Network"
+                    android:textAllCaps="false"
+                    android:textColor="#ff6e02"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:background="@drawable/selector_button_forgot"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Continue"
+                android:onClick="ToPhoneVerification"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
